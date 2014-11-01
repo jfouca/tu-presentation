@@ -1,0 +1,36 @@
+<div class="row jumbotron">
+    <form class="form-inline" name="form" role="form">
+        <div class="form-group" ng-class="{ 'has-error' : form.email.$invalid && form.email.$dirty, 'has-success' : form.email.$valid }">
+            <label for="email">Email address:</label>
+            <input name="email" type="email" class="form-control" id="email" placeholder="Enter email" ng-model="user.email" required>
+        </div>
+        <button class="btn btn-default" ng-click="register(user)"
+        ng-disabled="form.$invalid">Register</button>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="well">
+            <h3 class="glyphicon glyphicon-gift"></h3>
+            <strong>It is totally free !</strong>
+            <p>We are here only to allow great people to play with each other. Put that credit card in your pocket !</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="well">
+            <h3 class="glyphicon glyphicon-user"></h3>
+            <strong>Social</strong>
+            <p>You meet some new great people with the same interests</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="well">
+            <h3 class="glyphicon glyphicon-star"></h3>
+            <strong>Time to sign up !</strong>
+            <p>Seriously, why haven't you signed up yet ?</p>
+        </div>
+    </div>
+</div>
