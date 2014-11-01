@@ -55,7 +55,7 @@ translator.config(function($translateProvider) {
 
         // contact
         contact_title: 'Contactez nous !',
-        contact_body: 'Vous avez une question ? Vous avez une suggestion de fonctionnalité que vous aimeriez avoir sur le site ? Faites le nous savoir en remplissant ce formulaire.',
+        contact_body: 'Vous avez une question ? Vous avez une suggestion de fonctionnalité que vous aimeriez avoir sur le site ? Faîtes le nous savoir en remplissant ce formulaire.',
         contact_form_email_label: 'Adresse email: ',
         contact_form_email_placeholder: 'exemple@domaine.com',
         contact_form_title_label: 'Titre de votre message: ',
@@ -66,12 +66,12 @@ translator.config(function($translateProvider) {
 
         // homepage
         hello: 'Hello World !',
-        home_body: 'Vous désirez jouer à des jeux de plateau, de cartes, de role, mais vous ne connaissez personne ? Le moment est venu pour vous d\'y remédier',
+        home_body: 'Vous désirez jouer à des jeux de plateau, de cartes, de rôle, mais vous ne connaissez personne ? Le moment est venu pour vous d\'y remédier',
         home_learnmore: 'En apprendre d\'avantage',
 
         // about
-        about_title: 'est une plateform où vous pouvez facilement trouver d\'autres joueurs près de chez vous qui désirent également se lancer dans un jeu.',
-        about_body: 'Ce projet est toujours en cours de développement, mais n\'hésitez pas à nous montrer votre soutien en remplissant dès maintenant le formulaire d\'inscription. Vous bénéficierez d\'un accès anticipé à la Beta.',
+        about_title: 'est une plateforme où vous pouvez facilement trouver d\'autres joueurs près de chez vous qui désirent également se lancer dans un jeu.',
+        about_body: 'Ce projet est toujours en cours de développement, mais n\'hésitez pas à nous montrer votre soutien en remplissant dès maintenant le formulaire d\'inscription. Vous bénéficierez d\'un accès anticipé à la Bêta.',
         about_link_here: 'ici',
 
         // register
@@ -80,9 +80,9 @@ translator.config(function($translateProvider) {
         register_bloc_1_title: 'Totalement gratuit!',
         register_bloc_1_body: 'Rangez cette carte de crédit. Vous pouvez rencontrer des joueurs comme vous gratuitement',
         register_bloc_2_title: 'Social',
-        register_bloc_2_body: 'Rencontrez des gens passionnants et passionés par les meme domaines que vous.',
+        register_bloc_2_body: 'Rencontrez des gens passionnants et passionés par les même domaines que vous.',
         register_bloc_3_title: 'Enregistrez-vous !',
-        register_bloc_3_body: 'Sérieusement, vous ne vous etes pas encore enregistré ? Vous pourrez accéder en exclusivité à l\'ouverture des premières versions du site. Votre avis est très important !',
+        register_bloc_3_body: 'Sérieusement, vous ne vous êtes pas encore enregistré ? Vous pourrez accéder en exclusivité à l\'ouverture des premières versions du site. Votre avis est très important !',
         register_form_submit: 'S\'enregistrer',
     });
     $translateProvider.preferredLanguage('fr');
