@@ -71,7 +71,7 @@ translator.config(function($translateProvider) {
 
         // about
         about_title: 'est une plateforme où vous pouvez facilement trouver d\'autres joueurs près de chez vous qui désirent également se lancer dans un jeu.',
-        about_body: 'Ce projet est toujours en cours de développement, mais n\'hésitez pas à nous montrer votre soutien en remplissant dès maintenant le formulaire d\'inscription. Vous bénéficierez d\'un accès anticipé à la Bêta.',
+        about_body: 'Ce projet est toujours en cours de développement, mais n\'hésitez pas à nous montrer votre soutien en remplissant dès maintenant le formulaire d\'inscription ',
         about_link_here: 'ici',
 
         // register
