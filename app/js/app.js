@@ -6,9 +6,10 @@ var myApp = angular.module('myApp', [
   'ui.router',
   'controllers',
   'MessageCenterModule',
+  'translator'
 ]);
 
-myApp.config(function($stateProvider, $urlRouterProvider) {
+myApp.config(function($stateProvider, $urlRouterProvider, $translateProvider) {
     $urlRouterProvider.otherwise("/home");
     $stateProvider
     .state('homepage', {
@@ -30,4 +31,3 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         controller: "ContactCtrl"
     });
 });
-

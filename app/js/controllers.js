@@ -49,3 +49,9 @@ controllers.controller('ContactCtrl', ['$scope', '$location', '$http', 'messageC
         });
     }
 }]);
+
+controllers.controller('TranslateCtrl', function($translate, $scope) {
+    $scope.changeLanguage = function (langKey) {
+        $translate.use(langKey);
+    };
+});
