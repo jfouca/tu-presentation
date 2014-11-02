@@ -2,10 +2,9 @@
 
 var controllers = angular.module('controllers', []);
 
-controllers.controller('RegisterCtrl', ['$scope', '$location', '$http', 'messageCenterService',
-    function($scope, $location, $http, messageCenterService) {
+controllers.controller('RegisterCtrl', function($scope, $location, $http, messageCenterService, Page) {
     $scope.user = {};
-
+    Page.setTitle('Inscrivez-vous dès maintenant pour vous tenir informés des étapes de développement');
     $scope.register = function(user) {
         $http({
             url:'http://api.myapp.local/register',
@@ -24,10 +23,10 @@ controllers.controller('RegisterCtrl', ['$scope', '$location', '$http', 'message
             messageCenterService.add('danger', 'An error occured during registration, try again later.', { status: messageCenterService.status.permanent });
         });
     }
-}]);
+});
 
-controllers.controller('ContactCtrl', ['$scope', '$location', '$http', 'messageCenterService',
-    function($scope, $location, $http, messageCenterService) {
+controllers.controller('ContactCtrl', function($scope, $location, $http, messageCenterService, Page) {
+    Page.setTitle('Contactez l\'équipe de développement de Teams\' Up');
     $scope.message = {};
 
     $scope.contact = function(message) {
@@ -48,7 +47,19 @@ controllers.controller('ContactCtrl', ['$scope', '$location', '$http', 'messageC
             messageCenterService.add('danger', 'An error occured during confirmation, try again later.', { status: messageCenterService.status.permanent });
         });
     }
-}]);
+});
+
+controllers.controller('HomeCtrl', function($translate, $scope, Page) {
+    Page.setTitle('Rencontrez des joueurs près de chez vous');
+});
+
+controllers.controller('AboutCtrl', function($translate, $scope, Page) {
+    Page.setTitle('Apprennez-en d\'avantage sur ce qu\'est Teams\'Up');
+});
+
+controllers.controller('TitleCtrl', function($scope, Page) {
+    $scope.Page = Page;
+});
 
 controllers.controller('TranslateCtrl', function($translate, $scope) {
     $scope.changeLanguage = function (langKey) {
