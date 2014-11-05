@@ -1,5 +1,34 @@
-<div class="jumbotron">
-    <h1>{{ 'hello' | translate }}</h1>
-    <p>{{ 'home_body' | translate }}</p>
+<main id="content" role="main">
+    <h1 class="lead">{{ 'brand' | translate }}</h1>
+    <p class="lead">{{ 'home_meet_near_you' | translate }}</p>
     <p><a class="btn btn-primary btn-lg" role="button" ui-sref="about">{{ 'home_learnmore' | translate }}</a></p>
+</main>
+<div class="container">
+    <ol class="features">
+        <li>
+            <i class="fa fa-trophy fa-5x"></i>
+            <section class="interest">
+                <h3>{{ 'first_explanation_title' | translate }}</h3>
+                <p>{{ 'home_play_with_whom' | translate }}</p>
+                <p><italic><strong>{{ 'brand_site' | translate }}</strong></italic>, {{ 'home_our_solution' | translate }}</p>
+                <p>{{ 'home_free_solution' | translate }}</p>
+                <p>{{ 'home_still_dev' | translate }}<a ui-sref="about">{{ 'about_link_here' | translate }}</a>.</p>
+            </section>
+        </li>
+        <li>
+            <i class="fa fa-thumbs-o-up fa-5x"></i>
+            <section class="interest">
+                <h3>{{ 'second_explanation_title' | translate }}</h3>
+                <p>{{ 'home_please_register' | translate }}</p>
+                <p>{{ 'home_spread_the_word' | translate }}</p>
+            </section>
+        </li>
+    </ol>
+    
+</div>
+<div class="row center-block">
+    <div class="col-md-12">
+        <a ui-sref="register" class="btn btn-success">{{ 'home_signeup' | translate }}</a>
+        <div class="nocredit">{{ 'home_no_creditcard' | translate }}</div>
+    </div>
 </div>
