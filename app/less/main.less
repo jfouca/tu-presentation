@@ -32,10 +32,14 @@ html {
 .navbar {
     margin-bottom: 0;
 }
-
+ol {
+    list-style: none;
+    li i{
+        color: #428bca;
+    }
+}
 ol.features {
     position: relative;
-    list-style: none;
     max-width: 600px;
     margin: 0 auto;
     padding-left: 1em;
@@ -46,11 +50,6 @@ ol.features {
     li {
         margin-bottom: 4em;
     }
-    li i.fa{
-        color: #428bca;
-        padding-right: 25px;
-        float: left;
-    }
     section h3{
         font-size: 26px;
     }
@@ -59,11 +58,16 @@ ol.features {
     }
 }
 
+i.fa{
+        color: #428bca;
+        padding-right: 25px;
+        float: left;
+}
 .btn-success{
     background-color: #18bc9c;
     border-color: #18bc9c;
 }
-.btn-success:hover, .btn-success:active {
+.btn-success:hover, .btn-success:active, .btn-success:disabled {
     background-color: #13987e;
     border-color: #11866f;
 }
@@ -74,4 +78,13 @@ ol.features {
     margin-right: auto;
     text-align: center;
     padding-bottom: 50px;
+}
+
+.container {
+    margin-top: 25px;
+}
+
+.key-value {
+    color: #13987e;
+    padding-right: 25px;
 }

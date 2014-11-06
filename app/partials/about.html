@@ -1,8 +1,41 @@
 <div class="container">
-    <div class="col-md-12" role="main">
-        <div class="well">
-            <p><italic><strong>{{ 'brand' | translate }}</strong></italic> {{ 'about_title' | translate }}</p>
-            <p>{{ 'about_body' | translate }}<a class="btn btn-success" ui-sref="register">{{ 'about_link_here' | translate }}</a></p>
+    <div class="row">
+        <div class="col-md-12" role="main">
+            <div class="page-header">
+                <h3>{{ 'about_us' | translate }}</h3>
+            </div>
+            <h3 id="general-information">{{ 'brand' | translate }} {{ 'about_header' | translate }}</h3>
+            <p><strong>{{ 'about_whant_find_a_party_strong' | translate }}</strong> {{ 'about_whant_find_a_party' | translate }}</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="key-value fa fa-star fa-5x"></i> <section><h3>{{ 'about_your_desire' | translate }}</h3></section></li>
+                </div>
+                <div class="col-md-4">
+                    <i class="key-value fa fa-map-marker fa-5x"></i> <section><h3>{{ 'about_find_location' | translate }}</h3></section></li>
+                </div>
+                <div class="col-md-4">
+                    <i class="key-value fa fa-users fa-5x"></i> <section><h3>{{ 'about_find_a_party' | translate }}</h3></section></li>
+                </div>
+            </div>
+            <br/>
+            <p><strong>{{ 'about_create_a_party_strong' | translate }}</strong> {{ 'about_create_a_party' | translate }}</p>
+            <p><strong>{{ 'about_nice_session_strong' | translate }}</strong> {{ 'about_nice_session' | translate }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" role="main">
+            <div class="page-header">
+                <h3>{{ 'about_founders' | translate }}</h3>
+            </div>
+            <p>{{ 'about_founders_description' | translate }}</p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row center-block">
+        <div class="col-md-12">
+            <a ui-sref="register" class="btn btn-success">{{ 'home_signeup' | translate }}</a>
+            <div class="nocredit">{{ 'home_no_creditcard' | translate }}</div>
         </div>
     </div>
 </div>
