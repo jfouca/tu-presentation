@@ -1,33 +1,33 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12" role="main">
-            <div class="page-header">
-                <h3>{{ 'about_us' | translate }}</h3>
-            </div>
-            <h3 id="general-information">{{ 'brand' | translate }} {{ 'about_header' | translate }}</h3>
-            <p><strong>{{ 'about_whant_find_a_party_strong' | translate }}</strong> {{ 'about_whant_find_a_party' | translate }}</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <i class="key-value fa fa-star fa-5x"></i> <section><h3>{{ 'about_your_desire' | translate }}</h3></section></li>
-                </div>
-                <div class="col-md-4">
-                    <i class="key-value fa fa-map-marker fa-5x"></i> <section><h3>{{ 'about_find_location' | translate }}</h3></section></li>
-                </div>
-                <div class="col-md-4">
-                    <i class="key-value fa fa-users fa-5x"></i> <section><h3>{{ 'about_find_a_party' | translate }}</h3></section></li>
-                </div>
-            </div>
-            <br/>
-            <p><strong>{{ 'about_create_a_party_strong' | translate }}</strong> {{ 'about_create_a_party' | translate }}</p>
-            <p><strong>{{ 'about_nice_session_strong' | translate }}</strong> {{ 'about_nice_session' | translate }}</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12" role="main">
-            <div class="page-header">
-                <h3>{{ 'about_founders' | translate }}</h3>
-            </div>
-            <p>{{ 'about_founders_description' | translate }}</p>
+            <ol class="features">
+                <li>
+                    <i class="fa fa-trophy fa-5x"></i>
+                    <section class="interest">
+                        <h3>{{ 'first_explanation_title' | translate }}</h3>
+                        <p>{{ 'home_play_with_whom' | translate }}</p>
+                        <p><italic><strong>{{ 'brand_site' | translate }}</strong></italic>, {{ 'home_our_solution' | translate }}</p>
+                        <p>{{ 'home_free_solution' | translate }}</p>
+                        <p>{{ 'home_still_dev' | translate }}<a ui-sref="contact">{{ 'about_link_here' | translate }}</a>.</p>
+                    </section>
+                </li>
+                <li>
+                    <i class="fa fa-magic fa-5x"></i>
+                    <section class="interest">
+                        <h3>{{ 'third_explanation_title' | translate }}</h3>
+                        <p>{{ 'about_create_a_party' | translate }}</p>
+                    </section>
+                </li>
+                <li>
+                    <i class="fa fa-thumbs-o-up fa-5x"></i>
+                    <section class="interest">
+                        <h3>{{ 'second_explanation_title' | translate }}</h3>
+                        <p>{{ 'home_please_register' | translate }}</p>
+                        <p>{{ 'home_spread_the_word' | translate }}</p>
+                    </section>
+                </li>
+            </ol>
         </div>
     </div>
     <br/>
@@ -35,7 +35,6 @@
     <div class="row center-block">
         <div class="col-md-12">
             <a ui-sref="register" class="btn btn-success">{{ 'home_signeup' | translate }}</a>
-            <div class="nocredit">{{ 'home_no_creditcard' | translate }}</div>
         </div>
     </div>
 </div>
